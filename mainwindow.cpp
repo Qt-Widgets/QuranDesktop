@@ -20,7 +20,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
 
     db = QSqlDatabase::addDatabase("QSQLITE");
-    db.setDatabaseName("/media/data/dev/qt/Quran/db/quran.db");
+    db.setDatabaseName("/media/data/dev/qt/Quran/db/quran_ar_bn.db");
     db.open();
 
     QSqlQuery query("SELECT ID, NameAr, NameBn from surah");
